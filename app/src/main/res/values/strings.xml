@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Covid Track</string>
+    <string name="Otp_verification">Otp சரிபார்ப்பு</string>
+    <string name="submit">சமர்ப்பிக்கவும்</string>
+    <string name="covid_19_tracker">கோவிட் -19 டிராக்கர்</string>
+    <string name="No_network">நெட்வொர்க் இல்லை</string>
+    <string name="Check_internet">உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.\nமீண்டும் முயற்சிக்கவும்.</string>
+    <string name="refresh">புதுப்பிப்பு முயற்சி</string>
+    <string name="user_details">பயனர் விவரங்கள்</string>
+    <string name="name">பெயர்</string>
+    <string name="age">வயது</string>
+    <string name="gender">பாலினம்</string>
+    <string name="blood_type">இரத்த வகை</string>
+    <string name="phone">தொலைபேசி எண்</string>
+    <string name="verify_number">எண் சரிபார்ப்பு</string>
+    <string name="india">இந்தியா :</string>
+    <string name="tamilnadu">தமிழ்நாடு :</string>
+    <string name="district">மாவட்டம் :</string>
+    <string name="date">தேதி :</string>
+    <string name="overall">ஒட்டுமொத்த :</string>
+    <string name="active">பாதிப்பு :</string>
+    <string name="recovered">குணம் :</string>
+    <string name="death">இறப்பு :</string>
+    <string name="new_active">புதிய பாதிப்பு :</string>
+    <string name="new_recovered">புதிய குணம் :</string>
+    <string name="new_death">புதிய இறப்பு :</string>
+    <string name="search">தேடு</string>
+    <string name="language">மொழி</string>
+    <string name="tamil">தமிழ்</string>
+</resources>

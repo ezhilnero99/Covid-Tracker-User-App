@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeActivity">
+
+    <!--    header part-->
+
+    <View
+        android:id="@+id/pageHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@color/purple" />
+
+    <!--    header part-->
+
+    <LinearLayout
+        android:id="@+id/headerRL"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@id/pageHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/languageTV"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_10sdp"
+            app:srcCompat="@drawable/lanuage"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/cadman_normal"
+            android:layout_gravity="center_vertical"
+            android:text="@string/covid_19_tracker"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:id="@+id/useraddIV"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:scaleType="fitCenter"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/plus_asset" />
+    </LinearLayout>
+
+
+    <!--    header end-->
+
+    <!--    body part-->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollviewHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pageHeader"
+        android:layout_marginBottom="@dimen/_60sdp">
+
+        <RelativeLayout
+            android:id="@+id/bodyRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--country part-->
+            <include
+                android:id="@+id/homeitemCON"
+                layout="@layout/country_home_item_tamil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--state part-->
+            <include
+                android:id="@+id/stateitemCON"
+                layout="@layout/state_home_item_tamil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homeitemCON" />
+
+            <!--district part-->
+            <include
+                android:id="@+id/districtitemCON"
+                layout="@layout/district_home_item_tamil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stateitemCON" />
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/progressRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans_grey"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loading_asset" />
+
+    </RelativeLayout>
+
+    <!--    body end-->
+
+    <View
+        android:id="@+id/pageTrailing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple" />
+
+
+</RelativeLayout>

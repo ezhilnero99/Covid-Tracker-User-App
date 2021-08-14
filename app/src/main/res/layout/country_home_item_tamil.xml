@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/countryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/cadman_normal"
+        android:text="@string/india"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/countryCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryTitle"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dateCO_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cadman_normal"
+                    android:text="@string/date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_asset"
+                    android:backgroundTint="@color/grey"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/virusOverallIV"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerHorizontal="true"
+                        android:tint="@color/purple"
+                        app:srcCompat="@drawable/virus_asset" />
+
+                    <TextView
+                        android:id="@+id/overallTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/virusOverallIV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/cadman_normal"
+                        android:text="@string/overall"
+                        android:maxLines="1"
+                        android:textColor="@color/mid_grey" />
+
+                    <TextView
+                        android:id="@+id/overallCO_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/overallTitle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/cadman_normal"
+                        android:text=""
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_asset"
+                    android:backgroundTint="@color/grey"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/virusActiveIV"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerHorizontal="true"
+                        android:tint="@color/blue"
+                        app:srcCompat="@drawable/virus_asset" />
+
+                    <TextView
+                        android:id="@+id/activeTtile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/virusActiveIV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:maxLines="1"
+                        android:fontFamily="@font/cadman_normal"
+                        android:text="@string/active"
+                        android:textColor="@color/mid_grey"/>
+
+                    <TextView
+                        android:id="@+id/activeCO_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activeTtile"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/cadman_normal"
+                        android:text=""
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_asset"
+                    android:backgroundTint="@color/grey"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/virusrecIV"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerHorizontal="true"
+                        android:tint="@color/green"
+                        app:srcCompat="@drawable/virus_asset" />
+
+                    <TextView
+                        android:id="@+id/recoverTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/virusrecIV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/cadman_normal"
+                        android:text="@string/recovered"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:textColor="@color/mid_grey" />
+
+                    <TextView
+                        android:id="@+id/recoverCO_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/recoverTitle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/cadman_normal"
+                        android:text=""
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_asset"
+                    android:backgroundTint="@color/grey"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/virusdeadIV"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerHorizontal="true"
+                        android:tint="@color/red"
+                        app:srcCompat="@drawable/virus_asset" />
+
+                    <TextView
+                        android:id="@+id/deathTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/virusdeadIV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/cadman_normal"
+                        android:text="@string/death"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:textColor="@color/mid_grey" />
+
+                    <TextView
+                        android:id="@+id/deathCO_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deathTitle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/cadman_normal"
+                        android:text=""
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cadman_normal"
+                    android:text="@string/new_death"
+                    android:textColor="@color/mid_grey"
+                    />
+
+                <TextView
+                    android:id="@+id/death_newCO_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cadman_normal"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cadman_normal"
+                    android:text="@string/new_active"
+                    android:textColor="@color/mid_grey"
+                     />
+
+                <TextView
+                    android:id="@+id/active_newCO_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cadman_normal"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cadman_normal"
+                    android:text="@string/new_recovered"
+                    android:textColor="@color/mid_grey"/>
+
+                <TextView
+                    android:id="@+id/recover_newCO_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cadman_normal"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
